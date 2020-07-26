@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>表格的魅力</title>
+</head>
+<body>
+<!-- 创建表格 -->
+    <table border="1" width="500" 
+    height="200" align="center" 
+    cellspacing="0" cellpadding="10">
+    <!-- 表格标题 -->
+    <caption>个人信息表</caption>
+    <!--表头单元格标签th  -->
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </tr>
+
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>18</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>张三丰</td>
+            <td>99</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>张三丰子</td>
+            <td>199</td>
+            <td>未知</td>
+        </tr>
+    </table>
+
+
+
+
+    <!-- 小说排行榜 -->
+    <table border="10" cellspacing="0" 
+    width="500" height="249" align="center">
+        <caption><h3>小说排行榜</h3></caption> 
+        <tr>
+            <th>排名</th>
+            <th>关键词</th>
+            <th>趋势</th>
+            <th>今日搜索</th>
+            <th>最近七日</th>
+            <th>相关链接</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td>
+                <img src="0.jpg" width="10" height="10">
+            </td>
+            <td>356</td>
+            <td>3560</td>
+            <td>
+                <a href="#">贴吧</a>
+                <a href="#">图片</a>
+                <a href="#">百科</a>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>鬼吹灯</td>
+            <td>
+                <img src="2.jpg" width="10" height="10">
+            </td>
+            <td>356</td>
+            <td>3560</td>
+            <td>
+                <a href="#">贴吧</a>
+                <a href="#">图片</a>
+                <a href="#">百科</a>
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td>
+                <img src="3.jpg" width="10" height="10">
+            </td>
+            <td>356</td>
+            <td>3560</td>
+            <td>
+                <a href="#">贴吧</a>
+                <a href="#">图片</a>
+                <a href="#">百科</a>
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td>
+                <img src="4.jpg" width="10" height="10">
+            </td>
+            <td>356</td>
+            <td>3560</td>
+            <td>
+                <a href="#">贴吧</a>
+                <a href="#">图片</a>
+                <a href="#">百科</a>
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td>
+                <img src="5.jpg" width="10" height="10">
+            </td>
+            <td>356</td>
+            <td>3560</td>
+            <td>
+                <a href="#">贴吧</a>
+                <a href="#">图片</a>
+                <a href="#">百科</a>
+            </td>
+        </tr>
+    </table>
+
+
+<!-- 单元格合并 -->
+<table border="10" width="500" 
+height="230" align="center" cellspacing="0">
+    <tr>
+        <td>刘德华</td>
+        <td>男</td>
+        <td>18</td>
+        <!-- 目标单元格 先上后下 跨行合并-->
+        <td rowspan="2">照片</td>
+    </tr>
+    <tr>
+        <td>身高</td>
+        <td>汉族</td>
+        <td>已婚</td>
+        <!-- <td>照片</td> -->
+    </tr>
+    <tr>
+        <td>个人作品</td>
+        <!-- 目标单元格 先左后右 跨列合并 -->
+        <td colspan="3">个人作品</td>
+        <!-- <td>个人作品</td> -->
+        <!-- <td>个人作品</td> -->
+    </tr>
+    <tr>
+        <td>个人简历</td>
+        <td>个人简历</td>
+        <td>个人简历</td>
+        <td>个人简历</td>
+    </tr>
+</table>
+
+<!-- 无序列表 -->
+  <h2>1、无序列表</h2>
+    <ul>
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>榴莲</li>
+        <li>大白菜</li>
+    </ul>
+
+<!-- 有序列表 -->
+  <h2>2、有序列表</h2>
+    奥运金牌榜
+    <ol>
+        <li>美国</li>
+        <li>英国</li>
+        <li>中国</li>
+        <li>俄罗斯</li>
+    </ol>
+
+<!-- 自定义列表 -->
+  <h2>3、自定义列表</h2>
+    <dl>
+        <dt>北京</dt>
+        <dd>昌平区</dd>
+        <dd>海淀区</dd>
+        <dd>大兴区</dd>
+
+        <dt>山东</dt>
+        <dd>潍坊</dd>
+        <dd>青岛</dd>
+        <dd>廊坊</dd>
+    </dl>
+
+
+<!-- 表单标签 -->
+
+<!-- input标签 -->
+    用户名：<input type="text" value="请输入用户名" name="username" />
+    <br />
+    密码：<input type="password" name="pwd" />
+    <br />
+    昵称：<input type="text" value="请输入昵称" name="nicheng" />
+    <br />
+    性别：男 <input type="radio" name="sex" checked="checked" /> 
+        女 <input type="radio" name="sex" />
+        未知 <input type="radio" name="sex" />
+    <br />
+    爱好：
+        睡觉 <input type="checkbox" name="hobby" />
+        爬山 <input type="checkbox" name="hobby" />
+        篮球 <input type="checkbox" name="hobby" />
+        足球 <input type="checkbox" name="hobby" />
+    <br />
+
+    <input type="button" value="获取短信验证码" />
+    <input type="submit" value="提交所填"/>
+    <input type="reset" />  
+    <input type="image" src="0.jpg" width="50" height="50" />
+
+    上传头像：
+        <input type="file" />
+    <br />
+
+<!-- label标签 -->
+<h4>第一种方法 label直接包含</h4> <br />
+    <label> 用户名： <input type="text" /> </label> <br />
+<h4>第二种方法 通过for 和 id 来控制</h4> <br />
+    <label for="nc"> 昵称：</label> 
+    <input type="text" id="nc" /> <br />
+
+<!-- textarea控件 -->
+    用户留言： <textarea></textarea>
+<br />
+
+<!-- select下拉列表 -->
+<h3>籍贯</h3>
+    <select>
+        <option selected="selected">--请选择省份--</option>
+        <option>天津</option>
+        <option>上海</option>
+        <option>北京</option>
+        <option>深圳</option>
+    </select>
+<br />
+
+<!-- form表单域 -->
+    <form action="" method="post" name="scs">
+        用户名：<input type="text" name="username" /> <br />
+        密码：<input type="password" name="pwd" /> <br />
+        <input type="submit" />
+        <input type="reset" />
+    </form>
+    
+
+
+
+</body>
+</html>
+
+
